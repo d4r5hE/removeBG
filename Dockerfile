@@ -1,4 +1,9 @@
-from alpine:latest
+FROM python:3.9.1-alpine
 
-RUN apk add --no-cache python3-dev \
-    && pip3 install --upgrade pip
+WORKDIR /removeBG
+
+ADD . /removeBG
+
+RUN pip install -r requirements.txt
+
+CMD ["python","app.py"]
