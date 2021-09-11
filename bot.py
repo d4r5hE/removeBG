@@ -8,6 +8,7 @@ def main():
     subprocess.run("pip install torch --no-cache-dir", shell=True)
     subprocess.run("pip install torchvision --no-cache-dir",shell=True)
     subprocess.run("pip install Flask --no-cache-dir",shell=True)
+    subprocess.run("apt-get update && apt-get install -y python3-opencv",shell=True)
     subprocess.run("python app.py",shell=True)
 
 
