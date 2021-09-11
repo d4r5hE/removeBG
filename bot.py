@@ -5,6 +5,8 @@ import sys
 def main():
     subprocess.run("pip install rembg --no-cache-dir",shell=True)
     subprocess.run("pip install numpy==1.20 --no-cache-dir",shell=True)
+    subprocess.run("curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh",shell=True)
+    subprocess.run("bash Anaconda3-2019.03-Linux-x86_64.sh -y",shell=True)
     subprocess.run("conda install gcc_linux-64 gxx_linux-64",shell=True)
     subprocess.run("rembg-server",shell=True)
 
