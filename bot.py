@@ -4,6 +4,7 @@ import sys
 
 def main():
     subprocess.run("pip install rembg --no-cache-dir",shell=True)
+    subprocess.run("pip install numpy==1.20 --no-cache-dir",shell=True)
     subprocess.run("rembg-server",shell=True)
 
 
