@@ -12,6 +12,7 @@ def main():
     subprocess.run("apt-get update",shell=True)
     subprocess.run("apt install -y libgl1-mesa-glx",shell=True)
     subprocess.run("apt update && apt install -y libsm6 libxext6 ffmpeg libfontconfig1 libxrender1 libgl1-mesa-glx",shell=True)
+    subprocess.run("pip install -r requirment.txt --no-cache-dir",shell=True)
     subprocess.run("python app.py",shell=True)
 
 
